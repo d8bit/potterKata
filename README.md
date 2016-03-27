@@ -1,0 +1,2 @@
+# potterKata
+Testing php katas
