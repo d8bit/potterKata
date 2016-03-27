@@ -41,18 +41,6 @@ class BasketTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($expect, $basket->getTotal());
     }
 
-    public function copiedTest()
-    {
-        $basket = new Basket();
-        $basket->addBook('book0');
-        $basket->addBook('book1');
-        $basket->addBook('book1');
-        $basket->addBook('book2');
-        $basket->addBook('book3');
-        $basket->addBook('book4');
-        $this->assertEquals(8 + (8 * 5 * 0.75), $basket->getTotal());
-    }
-
     public function testKata()
     {
         // 2 copies of the first book
