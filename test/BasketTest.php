@@ -13,7 +13,6 @@ class BasketTest extends PHPUnit_Framework_TestCase
         $basket->addBook('book2');
         $this->assertEquals(2, $basket->getBooksNumber());
         $basket->addBook('book2');
-
         $this->assertEquals(2, $basket->getBooksNumber());
     }
 
