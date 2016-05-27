@@ -8,6 +8,7 @@
 class Basket
 {
     private $_books = [];
+
     const PRICE = 8;
 
     /**
