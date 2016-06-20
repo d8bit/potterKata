@@ -41,6 +41,16 @@ class BasketTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($expect, $basket->getTotal());
     }
 
+    public function testPete()
+    {
+        $basket = new Basket();
+        $basket->addBook('book1');
+        $basket->addBook('book1');
+        $basket->addBook('book2');
+        $expect = 0;
+        $this->assertEquals($expect, $basket->getBooksNumber());
+    }
+
     public function testKata()
     {
         // 2 copies of the first book
