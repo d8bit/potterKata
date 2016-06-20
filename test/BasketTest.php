@@ -37,7 +37,7 @@ class BasketTest extends PHPUnit_Framework_TestCase
         $expect = (5 * 8 * 0.75) + 8;
         $this->assertEquals($expect, $basket->getTotal());
         $basket->addBook('book5');
-        $expect = 1 + (5 * 8 * 0.75) + (2*8);
+        $expect = (5 * 8 * 0.75) + (2*8);
         $this->assertEquals($expect, $basket->getTotal());
     }
 
@@ -47,7 +47,7 @@ class BasketTest extends PHPUnit_Framework_TestCase
         $basket->addBook('book1');
         $basket->addBook('book1');
         $basket->addBook('book2');
-        $expect = 0;
+        $expect = 3;
         $this->assertEquals($expect, $basket->getBooksNumber());
     }
 
