@@ -1,2 +1,2 @@
 # potterKata
-Testing php katas
+Testing php katas.
