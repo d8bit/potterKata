@@ -24,7 +24,7 @@
          verbose="false">
 <filter>
   <whitelist processUncoveredFilesFromWhitelist="true">
-    <file>test/BasketTest.php</file>
+    <file>tests/BasketTest.php</file>
     <exclude></exclude>
   </whitelist>
 </filter>
