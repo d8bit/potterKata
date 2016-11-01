@@ -230,7 +230,7 @@
    depends="prepare"
    description="Run unit tests with PHPUnit">
    <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
-     <arg value=""/>
+     <arg value="--coverage-clover ${basedir}/build/logs/clover.xml"/>
      <arg path="${basedir}/tests"/>
    </exec>
 
