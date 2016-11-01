@@ -230,7 +230,7 @@
    depends="prepare"
    description="Run unit tests with PHPUnit">
    <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
-     <arg value="--configuration"/>
+     <arg value=""/>
      <arg path="${basedir}/tests"/>
    </exec>
 
@@ -242,7 +242,7 @@
    depends="prepare"
    description="Run unit tests with PHPUnit (without generating code coverage reports)">
    <exec executable="${phpunit}" failonerror="true" taskname="phpunit">
-     <arg value="--configuration"/>
+     <arg value=""/>
      <arg path="${basedir}/tests"/>
      <arg value="--no-coverage"/>
    </exec>
