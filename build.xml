@@ -231,12 +231,11 @@
    description="Run unit tests with PHPUnit">
    <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
      <arg value="--configuration"/>
-     <arg path="${basedir}/tests"/>
+     <arg path="${basedir}tests"/>
    </exec>
 
    <property name="phpunit.done" value="true"/>
  </target>
-
 
  <target name="phpdox"
    unless="phpdox.done"
