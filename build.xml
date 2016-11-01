@@ -226,9 +226,9 @@
    unless="phpunit.done"
    depends="prepare"
    description="Run unit tests with PHPUnit">
-   <exec executable="${phpunit} tests/" resultproperty="result.phpunit" taskname="phpunit">
+   <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
      <arg value=""/>
-     <arg path=""/>
+     <arg path="tests"/>
    </exec>
 
    <property name="phpunit.done" value="true"/>
@@ -238,7 +238,7 @@
    unless="phpunit.done"
    depends="prepare"
    description="Run unit tests with PHPUnit (without generating code coverage reports)">
-   <exec executable="${phpunit} tests/" failonerror="true" taskname="phpunit">
+   <exec executable="${phpunit}" failonerror="true" taskname="phpunit">
      <arg value="--configuration"/>
      <arg path="${basedir}/build/phpunit.xml"/>
      <arg value="--no-coverage"/>
