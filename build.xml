@@ -232,7 +232,8 @@
    <exec executable="${phpunit}" resultproperty="result.phpunit" taskname="phpunit">
      <arg value=""/>
      <arg path="${basedir}/tests"/>
-     <arg value="--coverage-clover ${basedir}/build/logs/clover.xml"/>
+     <arg value="--coverage-clover"/>
+     <arg path="${basedir}/build/logs/clover.xml"/>
    </exec>
 
    <property name="phpunit.done" value="true"/>
